@@ -84,6 +84,9 @@
      evince
    ];
 
+   virtualisation.virtualbox.host.enable = true;
+   users.extraGroups.vboxusers.members = [ "A" ];
+
   nixpkgs.config.allowUnfree = true;
 
   # Some programs need SUID wrappers, can be configured further or are
